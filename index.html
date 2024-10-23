@@ -5,11 +5,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Home</title>
 	<style>
+		#grad1 {
+			background-image: linear-gradient(#d6ffdf, #012e0b);
+		}
 		body {
 			font-family: Arial, Helvetica, sans-serif;
 			font-style: normal;
 			font-weight: 500;
-			background-color: #3f613b;
 		}
 		ul {
 			list-style-type: none;
@@ -32,25 +34,60 @@
 			margin-left: auto;
 			margin-right: auto;
 		}
+		.total-flex {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			align-content: center;
+			justify-content: center;
+		}
 		.timeline {
+			text-align: center;
+			display: flex;
+			max-width: 600px;
+			flex-direction: column;
+			flex-wrap: wrap;
+			background: darkseagreen;
+			margin: 10px;
+			padding: 10px;
+			border: 10px;
+			font-size: 20px;
+		}
+		.top {
+			text-align: center;
+			display: flex;
+			flex-direction: column;
+			justify-self: center;
+			flex-wrap: wrap;
 			background: darkseagreen;
 			margin: 10px;
 			padding: 25px;
 			border: 10px;
-			max-width: 780px;
-			margin-left: auto;
-			margin-right: auto;
-			position: static;
+			max-width: 500px;
+			font-size: 20px;
 		}
 		.center {
-			display: block;
+			display: inline-flex;
 			margin-left: auto;
 			margin-right: auto;
 			width: 50%;
 		}
+		.end {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			align-content: center;
+			justify-content: center;
+			margin: 10px;
+			padding: 25px;
+			border: 10px;
+			max-width: 500px;
+			background: black;
+			color: white;
+		}
 	</style>
 </head>
-<body>
+<body id="grad1">
 	<div class="navigation">
 		<ul>
 		  <li><a href="index.html">Time lapse</a></li> |
@@ -58,63 +95,67 @@
 		  <li><a href="action.html">Where we're going</a></li>
 		</ul>
 	</div>
-	<div class="timeline">
-		<header>
-			A Floresta Amazônica
-		</header>
-	</div>
-	<div class="timeline">
-		<header>
-			2002
-		</header>
-		<img src="2002.png" class="center">
-	</div>
-	<div class="timeline">
-		<header>
-			2004
-		</header>
-		<img src="2004.png" class="center">
-	</div>
-	<div class="timeline">
-		<header>
-			2006
-		</header>
-		<img src="2006.png" class="center">
-	</div>
-	<div class="timeline">
-		<header>
-			2008
-		</header>
-		<img src="2008.png" class="center">
-	</div>
-	<div class="timeline">
-		<header>
-			2010
-		</header>
-		<img src="2010.png" class="center">
-	</div>
-	<div class="timeline">
-		<header>
-			2012
-		</header>
-		<img src="2012.png" class="center">
-	</div>
-	<div class="timeline">
-		<header>
-			2014
-		</header>
-		<img src="2014.png" class="center">
-	</div>
-	<div class="timeline">
-		<header>
-			2019
-		</header>
-		<img src="2019.png" class="center">
-	</div>
-	<div class="timeline">
-		<p>
-			Source: <a href="https://earthobservatory.nasa.gov/images/145988/tracking-amazon-deforestation-from-above">Tracking Amazon Deforestation from Above</a>
-		</p>
+	<div class="top">
+			<header>
+				Coverage of the Amazon Rainforest
+			</header>
+		</div>
+	<div class="total-flex">
+		
+		<div class="timeline">
+			<header>
+				2002
+			</header>
+			<img src="2002.png" class="center">
+		</div>
+		<div class="timeline">
+			<header>
+				2004
+			</header>
+			<img src="2004.png" class="center">
+		</div>
+		<div class="timeline">
+			<header>
+				2006
+			</header>
+			<img src="2006.png" class="center">
+		</div>
+		<div class="timeline">
+			<header>
+				2008
+			</header>
+			<img src="2008.png" class="center">
+		</div>
+		<div class="timeline">
+			<header>
+				2010
+			</header>
+			<img src="2010.png" class="center">
+		</div>
+		<div class="timeline">
+			<header>
+				2012
+			</header>
+			<img src="2012.png" class="center">
+		</div>
+		<div class="timeline">
+			<header>
+				2014
+			</header>
+			<img src="2014.png" class="center">
+		</div>
+		<div class="timeline">
+			<header>
+				2019
+			</header>
+			<img src="2019.png" class="center">
+		</div>
+		<div class="end">
+			<p style="font-size: 20px"></p>
+			<p style="font-size: 20px">
+				Source: <a href="https://earthobservatory.nasa.gov/images/145988/tracking-amazon-deforestation-from-above" style="color: white;">Tracking Amazon Deforestation from Above</a>
+			</p>
+		</div>
 	</div>
 </body>
 </html>
