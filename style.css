@@ -1,0 +1,122 @@
+/* Wouhou! */
+
+* {
+	box-sizing: border-box;
+}
+		
+
+body, html {
+	padding: 0px;
+	margin: 0px;
+}
+
+#grad1 {
+	background-image: linear-gradient(#d6ffdf, #012e0b);
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: 500;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	display: inline;
+}
+
+h5 {
+	align-self: center;
+	font-size: 20pt;
+}
+
+.navigation {
+	background: lightgreen;
+	margin: 10px;
+	padding: 25px;
+	border: 10px;
+	max-width: 1640px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.innerContainer {
+	padding: 2em;
+}
+
+.total-flex {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 1em;
+	align-items: stretch;
+}
+
+.bigTimeline {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-content: center;
+	justify-content: center;
+}
+
+.flex-container {
+	display: flex;
+	flex-direction: column;
+	border-radius: 0.5em;
+	background: darkseagreen;
+
+	padding: 25px;
+	border: 10px;
+	font-size: 20px;
+	width: 400px;
+}
+
+.heroContainer {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	padding: 2.7em;
+	font-size: 20px;
+	background: darkseagreen;
+	margin-bottom: 2em;
+	border-radius: 1em;
+}
+
+.heroContainer > div {
+	display: flex;
+	gap: 1em;	
+}
+
+.heroContainer > div > img {
+	border-radius: 1em;
+	flex-basis: 100%;
+}
+
+.end {
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+	align-content: center;
+	justify-content: center;
+	padding: 2.7em;
+	border-radius: 1em;
+	margin-bottom: 2em;
+	background: rgba(0,0,0,0.5);
+	color: white;
+}
+
+.compress {
+	display: block;
+	max-height: 100%;
+	max-width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	height: auto;
+	border-radius: 1em;
+}
